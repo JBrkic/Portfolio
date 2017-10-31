@@ -1,0 +1,56 @@
+// Fonts
+
+@font-face {
+  font-family: Atami;
+  src: url("/fonts/Atami-Regular.otf");
+}
+
+@font-face {
+  font-family: AtamiLight;
+  src: url("/fonts/Atami-Light.otf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: AtamiLightOblique;
+  src: url("/fonts/Atami-LightOblique.otf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: AtamiOblique;
+  src: url("/fonts/Atami-Oblique.otf");
+}
+
+@font-face {
+  font-family: AtamiDisplay;
+  src: url("/fonts/Atami-Display.otf");
+}
+
+@font-face {
+  font-family: GloberBold;
+  src: url("/fonts/Glober SemiBold Free.otf");
+}
+
+@font-face {
+  font-family: GloberThin;
+  src: url("/fonts/Glober Thin Free.otf");
+}
+
+@font-face {
+  font-family: North;
+  src: url("/fonts/North.otf");
+}
+
+@font-face {
+  font-family: "nowayregular";
+  src: url("/fonts/noway-regular-webfont.eot");
+  src: url("/fonts/noway-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/noway-regular-webfont.woff2") format("woff2"),
+    url("/fonts/noway-regular-webfont.woff") format("woff"),
+    url("/fonts/noway-regular-webfont.ttf") format("truetype"),
+    url("/fonts/noway-regular-webfont.svg#nowayregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
