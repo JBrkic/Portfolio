@@ -1,96 +1,91 @@
 .projects-container {
-  width: 100%;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .projects {
-  width: 1170px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  padding: rem(20);
-  border-radius: 2px;
-  background-color: $light;
-  box-shadow: $shadow;
-
-  .card {
-    background-color: #ffffff;
-    text-align: left;
-    text-decoration: none;
-    color: $dark;
-    width: 32%;
-    height: auto;
+    width: 1170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
     box-sizing: border-box;
+    padding: rem(20);
     border-radius: 2px;
-    margin-bottom: rem(20);
+    background-color: $light;
     box-shadow: $shadow;
-    transition: all 300ms ease-in-out;
-
-    .card-header {
-      display: inline-block;
-      margin: 0 0 rem(10) 0;
-      text-transform: uppercase;
-    }
-
-    &:hover {
-      box-shadow: $shadow-large;
-      transform: translateY(rem(-4));
-
-      img {
-        opacity: 0.1;
-      }
-    }
-
-    span {
-      float: right;
-      text-align: right;
-      margin-top: 3px;
-      font-family: $font-headings;
-      font-weight: 500;
-      font-size: rem(14);
-      color: $gray;
-    }
-
-    figure {
-      margin: 0;
-
-      img {
-        width: 100%;
+    .card {
+        background-color: #ffffff;
+        text-align: left;
+        text-decoration: none;
+        color: $dark;
+        width: 32%;
+        height: 400px;
+        box-sizing: border-box;
         border-radius: 2px;
+        margin-bottom: rem(20);
+        box-shadow: $shadow;
         transition: all 300ms ease-in-out;
-      }
-
-      figcaption {
-        margin: rem(28);
-        transition: all 300ms ease-in-out;
-        .card-header-light {
-          color: $main;
+        .card-container {
+            box-sizing: border-box;
+            height: 200px;
+            padding: rem(28);
         }
-      }
+        .card-header {
+            display: inline-block;
+            margin: 0 0 rem(10) 0;
+            text-transform: uppercase;
+        }
+        &:hover {
+            box-shadow: $shadow-large;
+            transform: translateY(rem(-4));
+            img {
+                opacity: 0.1;
+            }
+        }
+        span {
+            float: right;
+            text-align: right;
+            margin-top: 3px;
+            font-family: $font-headings;
+            font-weight: 500;
+            font-size: rem(14);
+            color: $gray;
+        }
+        figure {
+            margin: 0;
+            img {
+                width: 100%;
+                border-radius: 2px;
+                transition: all 300ms ease-in-out;
+            }
+            figcaption {
+                margin: rem(28);
+                transition: all 300ms ease-in-out;
+                .card-header-light {
+                    color: $main;
+                }
+            }
+        }
     }
-  }
-  .card-dark {
-    background-color: $dark;
-    color: $light;
-    .card-header-dark {
-      color: $accent;
+    .card-dark {
+        background-color: $dark;
+        color: $light;
+        .card-header-dark {
+            color: $accent;
+        }
     }
-  }
-  .card-text {
-    background-color: $main;
-    color: $light;
-    padding: rem(28);
-    box-shadow: $shadow;
-
-    .card-header-text {
-      color: $light;
+    .card-text {
+        background-color: $main;
+        color: $light;
+        box-shadow: $shadow;
+        .card-header-text {
+            color: $light;
+        }
     }
-  }
 }

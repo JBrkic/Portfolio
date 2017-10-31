@@ -1,24 +1,10 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
-const plumber = require('gulp-plumber');
-const notify = require('gulp-notify');
-const gutil = require('gulp-util');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function () {
     return gulp.src(['src/scss/*.scss'])
-        .pipe(plumber({
-            errorHandler: function (err) {
-                notify.onError({
-                    title: "Gulp error in " + err.plugin,
-                    message: err.toString()
-                })(err);
-
-                // play a sound once
-                gutil.beep();
-            }
-        }))
         .pipe(sass())
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
